@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Segmented Gauge</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background: #ffffff;
+    }
+
+    .gauge-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    /* --- GAUGE --- */
+    .gauge {
+      position: relative;
+      width: 260px;
+      height: 130px;       /* Half circle */
+      overflow: hidden;    /* Hide bottom half of the circle */
+    }
+
+    .gauge-arc {
+      position: absolute;
+      inset: auto 0 0 0;
+      margin: 0 auto;
+      width: 260px;
+      height: 260px;       /* full circle, we only show top half */
+      border-radius: 50%;
+      /* Red (left), Yellow (top), Green (right) */
+      background: conic-gradient(
+        #43a047 0deg 60deg,      /* green right */
+        #fbc02d 60deg 120deg,    /* yellow top */
+        #e53935 120deg 180deg,   /* red left */
+        #e53935 180deg 360deg    /* bottom (hidden) */
+      );
+      box-shadow: 0 0 8px rgba(0,0,0,0.2) inset;
+    }
+
+    /* White separators between segments */
+    .divider {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 3px;
+      height: 100%;
+      background: #ffffff;
+      transform-origin: bottom center;
+    }
+    .divider.left  { transform: translateX(-50%) rotate(-40deg); }
+    .divider.right { transform: translateX(-50%) rotate(40deg); }
+
+    /* Inner cover to create thickness & flat bottom like the image */
+    .gauge-center-cover {
+      position: absolute;
+      width: 70%;
+      height: 140%;
+      bottom: -25%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #ffffff;
+      border-radius: 50%;
+      box-shadow: 0 -2px 6px rgba(0,0,0,0.15);
+    }
+
+    /* Needle */
+    .needle {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 100%;
+      transform-origin: bottom center;
+      transform: rotate(0deg);
+      transition: transform 0.35s ease;
+    }
+
+    /* Triangular pointer */
+    .needle::before {
+      content: "";
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 0;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-bottom: 80px solid #222;
+    }
+
+    /* Small round hub */
+    .needle::after {
+      content: "";
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      width: 16px;
+      height: 16px;
+      background: #222;
+      border-radius: 50%;
+      box-

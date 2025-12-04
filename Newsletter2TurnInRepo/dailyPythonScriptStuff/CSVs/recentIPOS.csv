@@ -1,0 +1,23 @@
+Company,Symbol,Lead Managers,Shares (Millions),Price Low,Price High,Est. $ Volume,Expected to Trade,Scraped Date,polygon_market_status,polygon_last_quote_price,polygon_last_quote_size,polygon_last_trade_price,polygon_last_trade_size,polygon_min_price,polygon_min_volume,polygon_max_price,polygon_max_volume,polygon_prev_close,polygon_open,polygon_high,polygon_low,polygon_volume,polygon_vwap,polygon_name,polygon_market,polygon_locale,polygon_primary_exchange,polygon_type,polygon_active,polygon_currency_name,polygon_cik,polygon_composite_figi,polygon_share_class_figi,polygon_last_updated_utc,polygon_delisted_utc,processed_date
+DT House Ltd.,DTDT,American Trust Investment Services,2.0,4.00,5.00,$ 9.0 mil,10/24/2025 Friday,2025-10-16 16:18:48,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025-10-24 11:42:06
+Lafayette Acquisition Corp.,LAFAU,EarlyBirdCapital,10.0,10.00,10.00,$ 100.0 mil,10/24/2025 Priced,2025-10-24 11:42:04,,,,,,,112670,,,,,,,,,,,,,,,,,,,,,2025-10-24 11:42:06
+ELC Group Holdings Ltd.,ELCG,D. Boral Capital (ex-EF Hutton),1.9,4.00,6.00,$ 9.4 mil,10/23/2025 Thursday,2025-10-22 11:50:26,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025-10-23 15:26:48
+Texxon Holding (New Filing),NPT,D. Boral Capital (ex-EF Hutton),2.0,4.00,5.00,$ 9.0 mil,10/22/2025 Wednesday,2025-10-10 21:02:10,,,,,,,143,,,,,,,,,,,,,,,,,,,,,2025-10-22 11:50:28
+Phaos Technology (Cayman) Holdings Ltd.,POAS,Network 1 Financial Securities,3.6,4.00,5.00,$ 16.2 mil,10/22/2025 Wednesday,2025-10-16 16:18:48,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025-10-22 11:50:29
+AIGO Holding Ltd.,AIGO,Eddid Securities USA,2.0,4.00,6.00,$ 10.0 mil,10/22/2025 Wednesday,2025-10-21 09:40:17,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025-10-22 11:50:29
+Agencia Comercial Spirits,AGCC,D. Boral Capital (ex-EF Hutton)/Revere Securities,1.8,4.00,4.00,$ 7.0 mil,10/22/2025 Priced,2025-10-22 11:50:26,,,,,,,7400,,,,,,,,,,,,,,,,,,,,,2025-10-22 11:50:29
+Calisa Acquisition Corp.,ALISU,EarlyBirdCapital,6.0,10.00,10.00,$ 60.0 mil,10/22/2025 Priced,2025-10-22 11:50:26,,,,,,,100271,,,,,,,,,,,,,,,,,,,,,2025-10-22 11:50:30
+Bgin Blockchain Ltd.,BGIN,D. Boral Capital (ex-EF Hutton),6.0,5.00,7.00,$ 36.0 mil,10/21/2025 Week of,2025-10-07 18:53:53,,,,,,,13485,,,,,,,,,,,,,,,,,,,,,2025-10-21 09:40:19
+Miluna Acquisition,MMTX,D. Boral Capital (ex-EF Hutton)/ ARC Group Securities,6.0,10.00,10.00,$ 60.0 mil,10/21/2025 Tuesday,2025-10-16 16:18:48,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025-10-21 09:40:19
+Ambitions Enterprise Management,AHMA,AC Sunshine Securities/Univest Securities,1.5,4.00,4.00,$ 6.0 mil,10/21/2025 Priced,2025-10-21 09:40:17,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025-10-21 09:40:19
+Charming Medical Ltd.,MCTA,Cathay Securities,1.6,4.00,4.00,$ 6.4 mil,10/21/2025 Priced,2025-10-21 09:40:17,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025-10-21 09:40:20
+Miluna Acquisition,MMTXU,D. Boral Capital (ex-EF Hutton)/ ARC Group Securities,6.0,10.00,10.00,$ 60.0 mil,10/21/2025 Tuesday,2025-10-21 09:40:17,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025-10-21 09:40:20
+Harvard Avenue Acquisition Corp.,HAVAU,D. Boral Capital (ex-EF Hutton),18.0,10.00,10.00,$ 180.0 mil,10/17/2025 Friday,2025-10-07 18:53:53,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025-10-16 16:18:49
+Acco Group Holdings Ltd.,ACCL,Revere Securities/ Craft Capital Management,1.4,4.00,6.00,$ 7.0 mil,10/17/2025 Friday,2025-10-16 16:18:48,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025-10-16 16:18:50
+Aptera Motors (Direct Listing),SEV,Northland Securities,31.7,0.00,0.00,$ 0.0 mil,10/16/2025 Thursday,2025-10-16 16:18:48,,,,,,,259,,,,,,,,,,,,,,,,,,,,,2025-10-16 16:18:49
+Alliance Laundry Holdings Inc.,ALH,BofA Securities/J.P.Morgan/Morgan Stanley/Baird/BDT & MSD/BMO Capital Markets/Citigroup/Goldman Sachs/UBS Investment Bank,34.2,19.00,22.00,$ 700.1 mil,10/9/2025 Thursday,2025-10-07 18:53:53,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025-10-08 11:16:13
+OBOOK Holdings (Direct Listing),OWLS,D. Boral Capital (ex-EF Hutton) (Financial Adviser),0.0,0.00,0.00,$ 0.0 mil,10/9/2025 Thursday,2025-10-07 18:53:53,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025-10-08 11:16:17
+Phoenix Education Partners,PXED,Morgan Stanley/Goldman Sachs/BMO Capital Markets/Jefferies/Apollo Global/Truist Securities,4.3,31.00,33.00,$ 136.0 mil,10/9/2025 Thursday,2025-10-07 18:53:53,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025-10-08 11:16:20
+PomDoctor,POM,Joseph Stone Capital/Uphorizon,5.0,4.00,6.00,$ 25.0 mil,10/8/2025 Wednesday,2025-10-07 18:53:53,,,,,,,2828,,,,,,,,,,,,,,,,,,,,,2025-10-08 11:16:12
+Turn Therapeutics (Direct Listing),TTRX,Clear Street,17.9,0.00,0.00,$ 0.0 mil,10/8/2025 Wednesday,2025-10-07 18:53:53,,,,,,,248,,,,,,,,,,,,,,,,,,,,,2025-10-08 11:16:13
+Lake Superior Acquisition Corp.,LKSPU,Cohen & Company Capital Markets,10.0,10.00,10.00,$ 100.0 mil,10/7/2025 Priced,2025-10-07 18:53:53,,,,,,,1000,,,,,,,,,,,,,,,,,,,,,2025-10-07 21:02:51

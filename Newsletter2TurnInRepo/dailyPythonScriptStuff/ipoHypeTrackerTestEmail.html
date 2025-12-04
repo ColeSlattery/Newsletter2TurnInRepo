@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" style="margin:0;padding:0;">
+  <head>
+    <meta charset="utf-8">
+    <meta name="x-apple-disable-message-reformatting">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{NEWSLETTER_TITLE}} — {{SEND_DATE_LONG}}</title>
+    <style>
+      html, body { margin:0 !important; padding:0 !important; height:100% !important; width:100% !important; }
+      * { -ms-text-size-adjust:100%; -webkit-text-size-adjust:100%; }
+      .container { width:100%; max-width:640px; margin:0 auto; }
+      .h1 { font-size:36px; line-height:1.25; font-weight:800; color:#111827; margin:0; }
+      .sub { font-size:16px; line-height:1.6; color:#6B7280; margin:8px 0 0 0; }
+      .h2 { font-size:24px; line-height:1.3; font-weight:800; color:#111827; margin:0; }
+      .p  { font-size:16px; line-height:1.75; color:#4B5563; margin:0; }
+      .muted { color:#6B7280; }
+      .card { background:#ffffff; border:1px solid #E5E7EB; border-radius:12px; }
+      .card-inner { padding:20px; }
+      .metrics td { text-align:center; }
+      .metrics .label { font-size:12px; color:#64748B; font-weight:700; letter-spacing:.02em; text-transform:uppercase; }
+      .metrics .val { font-size:16px; color:#111827; font-weight:800; }
+      .divider { border:none; border-top:1px solid #E5E7EB; margin:16px 0; }
+      .accent { color:#ef4444; }
+      .positive { color:#059669; }
+      .link { color:#2563EB; text-decoration:underline; }
+      .pill { background:#F9FAFB; border:1px solid #E5E7EB; border-radius:8px; }
+      .analysis { background:#ffffff; border:1px solid #E5E7EB; border-radius:8px; padding:14px; }
+      @media (max-width:600px) {
+        .px { padding-left:16px !important; padding-right:16px !important; }
+        .h1 { font-size:30px !important; }
+        .h2 { font-size:20px !important; }
+        .card-inner { padding:16px !important; }
+      }
+    </style>
+  </head>
+  <body style="background:#F6F9FC; margin:0; padding:0;">
+    <!-- preheader -->
+    <div style="display:none;max-height:0;overflow:hidden;opacity:0;">
+      {{PREHEADER}}&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+    </div>
+
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background:#F6F9FC;">
+      <tr>
+        <td>
+          <table role="presentation" class="container" cellspacing="0" cellpadding="0" border="0" align="center" style="background:#ffffff;">
+            <!-- Header block with hosted logo URL -->
+            <tr>
+              <td class="px" style="padding:48px 24px 8px 24px; text-align:center;">
+                <a href="{{WEBSITE_URL}}" target="_blank" style="text-decoration:none;">
+                  <img src="{{LOGO_URL}}" alt="{{COMPANY_NAME}} logo"
+                       width="120" style="max-width:120px;height:auto;border:0;margin-bottom:16px;" />
+                </a>
+                <h1 class="h1">{{COMPANY_NAME}}</h1>
+                <p class="sub">{{NEWSLETTER_TITLE}} – {{SEND_DATE_LONG}}</p>
+              </td>
+            </tr>
+            <tr><td><hr class="divider" style="margin:24px 24px 0 24px;"></td></tr>
+
+            <!-- Market Overview -->
+            <tr>
+              <td class="px" style="padding:32px 24px 0 24px;">
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <tr>
+                    <td style="width:28px;vertical-align:top;padding-top:4px;">
+                      <span style="font-size:24px;">📈</span>
+                    </td>
+                    <td>
+                      <h2 class="h2">Market Overview</h2>
+                      <p class="p" style="margin-top:12px;">
+                        {{MARKET_OVERVIEW_TEXT}}
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- Leaderboard header -->
+            <tr>
+              <td class="px" style="padding:40px 24px 12px 24px;">
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <tr>
+                    <td style="width:28px;vertical-align:top;padding-top:4px;">
+                      <span style="font-size:24px;">🔥</span>
+                    </td>
+                    <td>
+                      <h2 class="h2">Top 5 IPO Leaderboard</h2>
+                      <p class="p muted" style="margin-top:8px;">This week's most hyped IPOs with comprehensive analysis and hype scores.</p>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- === IPO CARD #1 === -->
+            <tr>
+              <td class="px" style="padding:0 24px 20px 24px;">
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" class="card">
+                  <tr><td class="card-inner">
+                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                      <tr>
+                        <td style="vertical-align:top;width:56px;">
+                          <div class="pill" style="padding:0 10px; display:inline-block;">
+                            <p style="margin:10px 0;font-size:18px;font-weight:800;color:#ef4444;">#{{RANK_1}}</p>
+                          </div>
+                        </td>
+                        <td style="vertical-align:top;">
+                          <p style="margin:0;font-size:18px;font-weight:800;color:#111827;">{{COMPANY_FULL_NAME_1}}</p>
+                          <p style="margin:2px 0 0 0;font-size:13px;color:#6B7280;letter-spacing:.02em;">{{SECTOR_1}}</p>
+                          <p style="margin:8px 0 0 0;font-size:13px;color:#374151;"><strong>{{RATING_1}}</strong> | Risk: {{RISK_LEVEL_1}}</p>
+                        </td>
+                        <td style="vertical-align:top;text-align:right;">
+                          <p style="margin:0;font-size:18px;font-weight:800;" class="positive">Hype Score: {{HYPE_SCORE_1}}/100</p>
+                          <p style="margin:4px 0 0 0;font-size:13px;color:#374151;">Trend: {{TREND_SCORE_1}} | Sentiment: {{SENTIMENT_PCT_1}}%</p>
+                        </td>
+                      </tr>
+                    </table>
+                    <hr class="divider">
+                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" class="metrics">
+                      <tr>
+                        <td style="padding:8px;"><div><div class="label">Price Range</div><div class="val">{{PRICE_RANGE_1}}</div></div></td>
+                        <td style="padding:8px;"><div><div class="label">Market Cap</div><div class="val">{{MARKET_CAP_1}}</div></div></td>
+                        <td style="padding:8px;"><div><div class="label">Revenue Growth</div><div class="val">{{REVENUE_GROWTH_PCT_1}}%</div></div></td>
+                        <td style="padding:8px;"><div><div class="label">Cash Flow</div><div class="val">{{CASH_FLOW_1}}</div></div></td>
+                      </tr>
+                    </table>
+                    <div class="analysis" style="margin-top:12px;">
+                      <p style="margin:0 0 6px 0;font-size:12px;letter-spacing:.02em;color:#334155;font-weight:800;">AI ANALYSIS:</p>
+                      <p class="p" style="margin:0;font-size:14px;line-height:1.7;color:#4B5563;">{{ANALYST_NOTES_1}}</p>
+                    </div>
+                  </td></tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- === IPO CARD #2 === -->
+            <tr>
+              <td class="px" style="padding:0 24px 20px 24px;">
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" class="card">
+                  <tr><td class="card-inner">
+                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                      <tr>
+                        <td style="vertical-align:top;width:56px;">
+                          <div class="pill" style="padding:0 10px; display:inline-block;">
+                            <p style="margin:10px 0;font-size:18px;font-weight:800;color:#ef4444;">#{{RANK_2}}</p>
+                          </div>
+                        </td>
+                        <td style="vertical-align:top;">
+                          <p style="margin:0;font-size:18px;font-weight:800;color:#111827;">{{COMPANY_FULL_NAME_2}}</p>
+                          <p style="margin:2px 0 0 0;font-size:13px;color:#6B7280;letter-spacing:.02em;">{{SECTOR_2}}</p>
+                          <p style="margin:8px 0 0 0;font-size:13px;color:#374151;"><strong>{{RATING_2}}</strong> | Risk: {{RISK_LEVEL_2}}</p>
+                        </td>
+                        <td style="vertical-align:top;text-align:right;">
+                          <p style="margin:0;font-size:18px;font-weight:800;" class="positive">Hype Score: {{HYPE_SCORE_2}}/100</p>
+                          <p style="margin:4px 0 0 0;font-size:13px;color:#374151;">Trend: {{TREND_SCORE_2}} | Sentiment: {{SENTIMENT_PCT_2}}%</p>
+                        </td>
+                      </tr>
+                    </table>
+                    <hr class="divider">
+                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" class="metrics">
+                      <tr>
+                        <td style="padding:8px;"><div><div class="label">Price Range</div><div class="val">{{PRICE_RANGE_2}}</div></div></td>
+                        <td style="padding:8px;"><div><div class="label">Market Cap</div><div class="val">{{MARKET_CAP_2}}</div></div></td>
+                        <td style="padding:8px;"><div><div class="label">Revenue Growth</div><div class="val">{{REVENUE_GROWTH_PCT_2}}%</div></div></td>
+                        <td style="padding:8px;"><div><div class="label">Cash Flow</div><div class="val">{{CASH_FLOW_2}}</div></div></td>
+                      </tr>
+                    </table>
+                    <div class="analysis" style="margin-top:12px;">
+                      <p style="margin:0 0 6px 0;font-size:12px;letter-spacing:.02em;color:#334155;font-weight:800;">AI ANALYSIS:</p>
+                      <p class="p" style="margin:0;font-size:14px;line-height:1.7;color:#4B5563;">{{ANALYST_NOTES_2}}</p>
+                    </div>
+                  </td></tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- === IPO CARD #3 === -->
+            <tr>
+              <td class="px" style="padding:0 24px 20px 24px;">
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" class="card">
+                  <tr><td class="card-inner">
+                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                      <tr>
+                        <td style="vertical-align:top;width:56px;">
+                          <div class="pill" style="padding:0 10px; display:inline-block;">
+                            <p style="margin:10px 0;font-size:18px;font-weight:800;color:#ef4444;">#{{RANK_3}}</p>
+                          </div>
+                        </td>
+                        <td style="vertical-align:top;">
+                          <p style="margin:0;font-size:18px;font-weight:800;color:#111827;">{{COMPANY_FULL_NAME_3}}</p>
+                          <p style="margin:2px 0 0 0;font-size:13px;color:#6B7280;letter-spacing:.02em;">{{SECTOR_3}}</p>
+                          <p style="margin:8px 0 0 0;font-size:13px;color:#374151;"><strong>{{RATING_3}}</strong> | Risk: {{RISK_LEVEL_3}}</p>
+                        </td>
+                        <td style="vertical-align:top;text-align:right;">
+                          <p style="margin:0;font-size:18px;font-weight:800;" class="positive">Hype Score: {{HYPE_SCORE_3}}/100</p>
+                          <p style="margin:4px 0 0 0;font-size:13px;color:#374151;">Trend: {{TREND_SCORE_3}} | Sentiment: {{SENTIMENT_PCT_3}}%</p>
+                        </td>
+                      </tr>
+                    </table>
+                    <hr class="divider">
+                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" class="metrics">
+                      <tr>
+                        <td style="padding:8px;"><div><div class="label">Price Range</div><div class="val">{{PRICE_RANGE_3}}</div></div></td>
+                        <td style="padding:8px;"><div><div class="label">Market Cap</div><div class="val">{{MARKET_CAP_3}}</div></div></td>
+                        <td style="padding:8px;"><div><div class="label">Revenue Growth</div><div class="val">{{REVENUE_GROWTH_PCT_3}}%</div></div></td>
+                        <td style="padding:8px;"><div><div class="label">Cash Flow</div><div class="val">{{CASH_FLOW_3}}</div></div></td>
+                      </tr>
+                    </table>
+                    <div class="analysis" style="margin-top:12px;">
+                      <p style="margin:0 0 6px 0;font-size:12px;letter-spacing:.02em;color:#334155;font-weight:800;">AI ANALYSIS:</p>
+                      <p class="p" style="margin:0;font-size:14px;line-height:1.7;color:#4B5563;">{{ANALYST_NOTES_3}}</p>
+                    </div>
+                  </td></tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- === IPO CARD #4 === -->
+            <tr>
+              <td class="px" style="padding:0 24px 20px 24px;">
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" class="card">
+                  <tr><td class="card-inner">
+                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                      <tr>
+                        <td style="vertical-align:top;width:56px;">
+                          <div class="pill" style="padding:0 10px; display:inline-block;">
+                            <p style="margin:10px 0;font-size:18px;font-weight:800;color:#ef4444;">#{{RANK_4}}</p>
+                          </div>
+                        </td>
+                        <td style="vertical-align:top;">
+                          <p style="margin:0;font-size:18px;font-weight:800;color:#111827;">{{COMPANY_FULL_NAME_4}}</p>
+                          <p style="margin:2px 0 0 0;font-size:13px;color:#6B7280;letter-spacing:.02em;">{{SECTOR_4}}</p>
+                          <p style="margin:8px 0 0 0;font-size:13px;color:#374151;"><strong>{{RATING_4}}</strong> | Risk: {{RISK_LEVEL_4}}</p>
+                        </td>
+                        <td style="vertical-align:top;text-align:right;">
+                          <p style="margin:0;font-size:18px;font-weight:800;" class="positive">Hype Score: {{HYPE_SCORE_4}}/100</p>
+                          <p style="margin:4px 0 0 0;font-size:13px;color:#374151;">Trend: {{TREND_SCORE_4}} | Sentiment: {{SENTIMENT_PCT_4}}%</p>
+                        </td>
+                      </tr>
+                    </table>
+                    <hr class="divider">
+                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" class="metrics">
+                      <tr>
+                        <td style="padding:8px;"><div><div class="label">Price Range</div><div class="val">{{PRICE_RANGE_4}}</div></div></td>
+                        <td style="padding:8px;"><div><div class="label">Market Cap</div><div class="val">{{MARKET_CAP_4}}</div></div></td>
+                        <td style="padding:8px;"><div><div class="label">Revenue Growth</div><div class="val">{{REVENUE_GROWTH_PCT_4}}%</div></div></td>
+                        <td style="padding:8px;"><div><div class="label">Cash Flow</div><div class="val">{{CASH_FLOW_4}}</div></div></td>
+                      </tr>
+                    </table>
+                    <div class="analysis" style="margin-top:12px;">
+                      <p style="margin:0 0 6px 0;font-size:12px;letter-spacing:.02em;color:#334155;font-weight:800;">AI ANALYSIS:</p>
+                      <p class="p" style="margin:0;font-size:14px;line-height:1.7;color:#4B5563;">{{ANALYST_NOTES_4}}</p>
+                    </div>
+                  </td></tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- === IPO CARD #5 === -->
+            <tr>
+              <td class="px" style="padding:0 24px 32px 24px;">
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" class="card">
+                  <tr><td class="card-inner">
+                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                      <tr>
+                        <td style="vertical-align:top;width:56px;">
+                          <div class="pill" style="padding:0 10px; display:inline-block;">
+                            <p style="margin:10px 0;font-size:18px;font-weight:800;color:#ef4444;">#{{RANK_5}}</p>
+                          </div>
+                        </td>
+                        <td style="vertical-align:top;">
+                          <p style="margin:0;font-size:18px;font-weight:800;color:#111827;">{{COMPANY_FULL_NAME_5}}</p>
+                          <p style="margin:2px 0 0 0;font-size:13px;color:#6B7280;letter-spacing:.02em;">{{SECTOR_5}}</p>
+                          <p style="margin:8px 0 0 0;font-size:13px;color:#374151;"><strong>{{RATING_5}}</strong> | Risk: {{RISK_LEVEL_5}}</p>
+                        </td>
+                        <td style="vertical-align:top;text-align:right;">
+                          <p style="margin:0;font-size:18px;font-weight:800;" class="positive">Hype Score: {{HYPE_SCORE_5}}/100</p>
+                          <p style="margin:4px 0 0 0;font-size:13px;color:#374151;">Trend: {{TREND_SCORE_5}} | Sentiment: {{SENTIMENT_PCT_5}}%</p>
+                        </td>
+                      </tr>
+                    </table>
+                    <hr class="divider">
+                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" class="metrics">
+                      <tr>
+                        <td style="padding:8px;"><div><div class="label">Price Range</div><div class="val">{{PRICE_RANGE_5}}</div></div></td>
+                        <td style="padding:8px;"><div><div class="label">Market Cap</div><div class="val">{{MARKET_CAP_5}}</div></div></td>
+                        <td style="padding:8px;"><div><div class="label">Revenue Growth</div><div class="val">{{REVENUE_GROWTH_PCT_5}}%</div></div></td>
+                        <td style="padding:8px;"><div><div class="label">Cash Flow</div><div class="val">{{CASH_FLOW_5}}</div></div></td>
+                      </tr>
+                    </table>
+                    <div class="analysis" style="margin-top:12px;">
+                      <p style="margin:0 0 6px 0;font-size:12px;letter-spacing:.02em;color:#334155;font-weight:800;">AI ANALYSIS:</p>
+                      <p class="p" style="margin:0;font-size:14px;line-height:1.7;color:#4B5563;">{{ANALYST_NOTES_5}}</p>
+                    </div>
+                  </td></tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- Market Interest Distribution -->
+            <tr>
+              <td class="px" style="padding:24px;">
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <tr>
+                    <td style="width:28px;vertical-align:top;padding-top:4px;">
+                      <span style="font-size:24px;">📊</span>
+                    </td>
+                    <td>
+                      <h2 class="h2">Market Interest Distribution</h2>
+                      <p class="p muted" style="margin-top:8px;">Search volume comparison across top IPO candidates.</p>
+                    </td>
+                  </tr>
+                </table>
+                <img src="{{CHART_INTEREST_URL}}" alt="Interest Distribution Chart" style="display:block;width:100%;max-width:592px;height:auto;border:1px solid #E5E7EB;border-radius:12px; margin-top:12px;">
+              </td>
+            </tr>
+
+            <!-- 7-Day Trend Analysis -->
+            <tr>
+              <td class="px" style="padding:0 24px 32px 24px;">
+                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
+                  <tr>
+                    <td style="width:28px;vertical-align:top;padding-top:4px;">
+                      <span style="font-size:24px;">📈</span>
+                    </td>
+                    <td>
+                      <h2 class="h2">7-Day Trend Analysis</h2>
+                      <p class="p muted" style="margin-top:8px;">Interest trends over the past week for top performers.</p>
+                    </td>
+                  </tr>
+                </table>
+                <img src="{{CHART_TREND_URL}}" alt="7-Day Trend Chart" style="display:block;width:100%;max-width:592px;height:auto;border:1px solid #E5E7EB;border-radius:12px; margin-top:12px;">
+              </td>
+            </tr>
+
+            <!-- Footer -->
+            <tr>
+              <td style="padding:24px; background:#F9FAFB; text-align:center;">
+                <p class="p muted" style="margin:0 0 10px 0;">Stay ahead of the IPO market with {{COMPANY_NAME}}.</p>
+                <p class="p" style="margin:0 0 10px 0;">
+                  <a href="{{UNSUBSCRIBE_URL}}" class="link">Unsubscribe</a>
+                  &nbsp;|&nbsp;
+                  <a href="{{WEBSITE_URL}}" class="link">Visit Website</a>
+                </p>
+                <p style="font-size:12px; line-height:1.6; color:#9CA3AF; margin:8px 0 0 0;">
+                  {{COMPANY_NAME}} Newsletter • Your trusted source for IPO market insights
+                </p>
+              </td>
+            </tr>
+
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
