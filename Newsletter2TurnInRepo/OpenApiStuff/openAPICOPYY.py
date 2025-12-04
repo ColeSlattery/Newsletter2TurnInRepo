@@ -17,7 +17,7 @@ from openai import OpenAI
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 # Hardcoded API Key
-API_KEY = "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"
+API_KEY = "sk-proj----TESTTTTTTTTTTTT-KoA"
 
 # Initialize OpenAI client
 client = OpenAI(api_key=API_KEY)
