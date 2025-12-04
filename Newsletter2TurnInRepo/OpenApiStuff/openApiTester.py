@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # Hardcoded API key
-api_key = "sk-pTESTTTTTTTTTTToA"
+api_key = "PublicTESTTTTTTTTTTT"
 
 def search_ipo_data():
     """Search for recent NYSE IPO data"""
